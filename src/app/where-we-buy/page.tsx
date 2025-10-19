@@ -5,7 +5,7 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
-import InteractiveMap from '@/components/InteractiveMap'
+import CDNMap from '@/components/InteractiveMap'
 import { RootLayout } from '@/components/RootLayout'
 
 const states = [
@@ -109,7 +109,7 @@ export default function WhereWeBuy() {
               to learn more about our activity in that region.
             </p>
           </div>
-          <InteractiveMap />
+          <CDNMap />
         </FadeIn>
       </Container>
 
