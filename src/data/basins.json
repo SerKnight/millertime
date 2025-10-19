@@ -1,0 +1,289 @@
+{
+  "basins": [
+    {
+      "id": "williston",
+      "name": "Williston Basin",
+      "displayName": "Williston",
+      "description": "Major Bakken formation in North Dakota and Montana",
+      "statistics": {
+        "dealsCompleted": 150,
+        "acresAcquired": 15000,
+        "yearsActive": 12,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["ND", "MT"],
+      "statesFullName": ["North Dakota", "Montana"],
+      "primaryCounties": ["McKenzie", "Dunn", "Williams", "Mountrail"],
+      "formations": ["Bakken", "Three Forks"],
+      "coordinates": {
+        "center": [-103.5, 48.0],
+        "labelPosition": [-103.5, 47.5],
+        "iconPosition": [-103.5, 48.5]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Williston Offer",
+        "url": "/contact?basin=williston",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "delaware",
+      "name": "Delaware Basin",
+      "displayName": "Delaware",
+      "description": "Permian sub-basin in West Texas and New Mexico",
+      "statistics": {
+        "dealsCompleted": 200,
+        "acresAcquired": 25000,
+        "yearsActive": 15,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["TX", "NM"],
+      "statesFullName": ["Texas", "New Mexico"],
+      "primaryCounties": ["Reeves", "Loving", "Lea", "Eddy"],
+      "formations": ["Bone Spring", "Wolfcamp"],
+      "coordinates": {
+        "center": [-104.0, 31.5],
+        "labelPosition": [-104.0, 31.0],
+        "iconPosition": [-104.0, 32.0]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Delaware Offer",
+        "url": "/contact?basin=delaware",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "eagle-ford",
+      "name": "Eagle Ford Shale",
+      "displayName": "Eagle Ford",
+      "description": "Major shale play in South Texas",
+      "statistics": {
+        "dealsCompleted": 180,
+        "acresAcquired": 20000,
+        "yearsActive": 14,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["TX"],
+      "statesFullName": ["Texas"],
+      "primaryCounties": ["Karnes", "DeWitt", "La Salle", "Dimmit"],
+      "formations": ["Eagle Ford"],
+      "coordinates": {
+        "center": [-98.5, 28.5],
+        "labelPosition": [-98.5, 28.0],
+        "iconPosition": [-98.5, 29.0]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Eagle Ford Offer",
+        "url": "/contact?basin=eagle-ford",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "haynesville",
+      "name": "Haynesville Shale",
+      "displayName": "Haynesville",
+      "description": "Natural gas shale play in East Texas and Louisiana",
+      "statistics": {
+        "dealsCompleted": 120,
+        "acresAcquired": 12000,
+        "yearsActive": 10,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["TX", "LA"],
+      "statesFullName": ["Texas", "Louisiana"],
+      "primaryCounties": ["Harrison", "Panola", "Caddo", "Bossier"],
+      "formations": ["Haynesville"],
+      "coordinates": {
+        "center": [-94.0, 32.5],
+        "labelPosition": [-94.0, 32.0],
+        "iconPosition": [-94.0, 33.0]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Haynesville Offer",
+        "url": "/contact?basin=haynesville",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "uinta",
+      "name": "Uinta Basin",
+      "displayName": "Uinta",
+      "description": "Oil and gas basin in northeastern Utah",
+      "statistics": {
+        "dealsCompleted": 80,
+        "acresAcquired": 8000,
+        "yearsActive": 8,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["UT"],
+      "statesFullName": ["Utah"],
+      "primaryCounties": ["Duchesne", "Uintah"],
+      "formations": ["Green River", "Wasatch"],
+      "coordinates": {
+        "center": [-110.0, 40.0],
+        "labelPosition": [-110.0, 39.5],
+        "iconPosition": [-110.0, 40.5]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Uinta Offer",
+        "url": "/contact?basin=uinta",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "midland",
+      "name": "Midland Basin",
+      "displayName": "Midland",
+      "description": "Permian sub-basin in West Texas",
+      "statistics": {
+        "dealsCompleted": 190,
+        "acresAcquired": 22000,
+        "yearsActive": 15,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["TX"],
+      "statesFullName": ["Texas"],
+      "primaryCounties": ["Midland", "Martin", "Howard", "Glasscock"],
+      "formations": ["Spraberry", "Wolfcamp"],
+      "coordinates": {
+        "center": [-102.0, 31.8],
+        "labelPosition": [-102.0, 31.3],
+        "iconPosition": [-102.0, 32.3]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Midland Offer",
+        "url": "/contact?basin=midland",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "dj",
+      "name": "DJ Basin",
+      "displayName": "DJ Basin",
+      "description": "Denver-Julesburg Basin in Colorado and Wyoming",
+      "statistics": {
+        "dealsCompleted": 140,
+        "acresAcquired": 14000,
+        "yearsActive": 11,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["CO", "WY"],
+      "statesFullName": ["Colorado", "Wyoming"],
+      "primaryCounties": ["Weld", "Adams", "Laramie"],
+      "formations": ["Niobrara", "Codell"],
+      "coordinates": {
+        "center": [-104.5, 40.5],
+        "labelPosition": [-104.5, 40.0],
+        "iconPosition": [-104.5, 41.0]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request DJ Basin Offer",
+        "url": "/contact?basin=dj",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "powder-river",
+      "name": "Powder River Basin",
+      "displayName": "Powder River",
+      "description": "Coal and oil basin in Wyoming and Montana",
+      "statistics": {
+        "dealsCompleted": 100,
+        "acresAcquired": 10000,
+        "yearsActive": 9,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["WY", "MT"],
+      "statesFullName": ["Wyoming", "Montana"],
+      "primaryCounties": ["Campbell", "Johnson", "Sheridan"],
+      "formations": ["Fort Union", "Lance"],
+      "coordinates": {
+        "center": [-106.0, 44.5],
+        "labelPosition": [-106.0, 44.0],
+        "iconPosition": [-106.0, 45.0]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Powder River Offer",
+        "url": "/contact?basin=powder-river",
+        "secondaryText": "Same-day quotes available"
+      }
+    },
+    {
+      "id": "anadarko",
+      "name": "Anadarko Basin",
+      "displayName": "Anadarko",
+      "description": "Oil and gas basin in Oklahoma and Texas",
+      "statistics": {
+        "dealsCompleted": 160,
+        "acresAcquired": 18000,
+        "yearsActive": 13,
+        "averageResponseTime": "24 hours"
+      },
+      "states": ["OK", "TX"],
+      "statesFullName": ["Oklahoma", "Texas"],
+      "primaryCounties": ["Canadian", "Dewey", "Blaine", "Kingfisher"],
+      "formations": ["Woodford", "Mississippian"],
+      "coordinates": {
+        "center": [-98.5, 35.5],
+        "labelPosition": [-98.5, 35.0],
+        "iconPosition": [-98.5, 36.0]
+      },
+      "color": {
+        "fill": "rgba(212, 167, 86, 0.3)",
+        "stroke": "#D4A756",
+        "hover": "rgba(212, 167, 86, 0.5)"
+      },
+      "cta": {
+        "text": "Request Anadarko Offer",
+        "url": "/contact?basin=anadarko",
+        "secondaryText": "Same-day quotes available"
+      }
+    }
+  ],
+  "totals": {
+    "totalDeals": 1320,
+    "totalAcres": 144000,
+    "yearsInBusiness": 15,
+    "statesCovered": 9
+  }
+}

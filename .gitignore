@@ -1,0 +1,100 @@
+# Dependencies
+node_modules/
+bower_components/
+vendor/
+packages/
+
+# Build outputs
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Package manager lock files (uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Next.js
+.next/
+.swc/
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Misc
+.sass-cache/
+connect.lock
+typing
