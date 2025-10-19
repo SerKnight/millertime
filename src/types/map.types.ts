@@ -23,7 +23,6 @@ export interface Basin {
     stroke: string;
     hover: string;
   };
-  geometry?: GeoJSON.Geometry;
   cta: {
     text: string;
     url: string;
