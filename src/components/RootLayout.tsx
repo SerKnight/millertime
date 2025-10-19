@@ -19,7 +19,6 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
-import { SocialMedia } from '@/components/SocialMedia'
 import { StickyCallButton } from '@/components/StickyCallButton'
 
 const RootLayoutContext = createContext<{
@@ -158,7 +157,10 @@ function Navigation() {
         <NavigationItem href="/where-we-buy">Where We Buy</NavigationItem>
       </NavigationRow>
       <NavigationRow>
+        <NavigationItem href="/interactive-map">Interactive Map</NavigationItem>
         <NavigationItem href="/resources">Resources</NavigationItem>
+      </NavigationRow>
+      <NavigationRow>
         <NavigationItem href="/contact">Contact</NavigationItem>
       </NavigationRow>
     </nav>
@@ -261,7 +263,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                     <h2 className="font-display text-base font-semibold text-white">
                       Follow us
                     </h2>
-                    <SocialMedia className="mt-6" invert />
                   </div>
                 </div>
               </Container>

@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
-import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
@@ -17,19 +16,24 @@ const navigation = [
     ],
   },
   {
-    title: 'Company',
+    title: 'Mineral Rights Education',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Selling Your Mineral Rights', href: '/selling-your-mineral-rights' },
-      { title: 'Mineral Rights Types', href: '/mineral-rights-types' },
-      { title: 'Resources', href: '/resources' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'Land Ownership', href: '/mineral-rights-types/land-ownership' },
+      { title: 'Mineral Rights', href: '/mineral-rights-types/mineral-rights' },
+      { title: 'Royalty Interests', href: '/mineral-rights-types/royalty-interests' },
+      { title: 'All Mineral Rights Types', href: '/mineral-rights-types' },
     ],
   },
   {
-    title: 'Connect',
-    links: socialMediaProfiles,
-  },
+    title: 'Company',
+    links: [
+      { title: 'About Us', href: '/about' },
+      { title: 'Selling Your Mineral Rights', href: '/selling-your-mineral-rights' },
+      { title: 'Interactive Map', href: '/interactive-map' },
+      { title: 'Resources', href: '/resources' },
+      { title: 'Contact Us', href: '/contact' },
+    ],
+  }
 ]
 
 function Navigation() {

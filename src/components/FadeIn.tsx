@@ -19,7 +19,7 @@ export function FadeIn(
         hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 24 },
         visible: { opacity: 1, y: 0 },
       }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.15 }}
       {...(isInStaggerGroup
         ? {}
         : {
@@ -42,7 +42,7 @@ export function FadeInStagger({
         initial="hidden"
         whileInView="visible"
         viewport={viewport}
-        transition={{ staggerChildren: faster ? 0.12 : 0.2 }}
+        transition={{ staggerChildren: faster ? 0.1 : 0.2 }}
         {...props}
       />
     </FadeInStaggerContext.Provider>
