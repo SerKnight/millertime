@@ -242,7 +242,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           <motion.div layout className="bg-neutral-800">
             <div ref={navRef} className="bg-primary pt-14 pb-16">
               <Header
-                invert
                 panelId={panelId}
                 icon={XIcon}
                 toggleRef={closeRef}

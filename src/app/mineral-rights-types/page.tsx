@@ -32,7 +32,7 @@ function TypesGrid() {
     <Container className="mt-12 sm:mt-16">
       <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-3">
         {types.map((type) => (
-          <article key={type.href} className="relative flex w-full flex-col rounded-3xl p-6 sm:p-8 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50">
+          <article key={type.href} className="relative flex w-full flex-col rounded-3xl p-6 sm:p-8 ring-1 ring-neutral-950/5 transition hover:bg-neutral-100 hover:shadow-lg hover:ring-neutral-950/10 cursor-pointer group">
             <h3>
               <Link href={type.href}>
                 <span className="absolute inset-0 rounded-3xl" />
@@ -47,6 +47,12 @@ function TypesGrid() {
             <p className="mt-4 text-sm text-neutral-500">
               {type.details}
             </p>
+            <div className="mt-6 flex items-center text-accent font-semibold text-sm group-hover:gap-2 transition-all">
+              <span>Learn More</span>
+              <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
           </article>
         ))}
       </div>

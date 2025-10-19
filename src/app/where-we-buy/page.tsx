@@ -46,7 +46,7 @@ function StatesGrid() {
       <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-2 xl:grid-cols-3">
         {states.map((state) => (
           <div key={state.name} className="flex">
-            <article className="relative flex w-full flex-col rounded-3xl p-6 sm:p-8 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50">
+            <article className="relative flex w-full flex-col rounded-3xl p-6 sm:p-8 ring-1 ring-neutral-950/5 transition hover:bg-neutral-100">
               <h3>
                 <Link href={state.href}>
                   <span className="absolute inset-0 rounded-3xl" />
