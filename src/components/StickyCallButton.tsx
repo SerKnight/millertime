@@ -24,7 +24,7 @@ export function StickyCallButton() {
     <div className="fixed bottom-4 right-4 z-50 lg:hidden">
       <a
         href="tel:+17203186907"
-        className="flex items-center justify-center w-16 h-16 rounded-full bg-accent text-white shadow-lg hover:bg-accent-dark transition-all duration-300 transform hover:scale-110"
+        className="flex items-center justify-center w-16 h-16 rounded-full bg-accent text-white shadow-lg hover:bg-accent-dark transition-all duration-200 transform hover:scale-110"
         aria-label="Call Miller Energy Group"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">

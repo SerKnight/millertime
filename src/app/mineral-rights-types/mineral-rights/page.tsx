@@ -2,13 +2,28 @@ import { type Metadata } from 'next'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 
 export const metadata: Metadata = {
-  title: 'Mineral Rights',
-  description: 'Understanding mineral rights ownership and your ability to extract or lease minerals.',
+  title: 'Mineral Rights - Ownership & Development Rights | Miller Energy Group',
+  description: 'Learn about mineral rights ownership, your ability to extract or lease minerals, and the rights and responsibilities of mineral ownership.',
+  keywords: 'mineral rights, mineral ownership, oil and gas rights, mineral development, working interest, royalty interest, mineral leasing',
+  openGraph: {
+    title: 'Mineral Rights - Ownership & Development Rights',
+    description: 'Learn about mineral rights ownership, your ability to extract or lease minerals, and the rights and responsibilities of mineral ownership.',
+    type: 'article',
+    url: 'https://millerenergygroup.com/mineral-rights-types/mineral-rights',
+    siteName: 'Miller Energy Group',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mineral Rights - Ownership & Development Rights',
+    description: 'Learn about mineral rights ownership, your ability to extract or lease minerals, and the rights and responsibilities of mineral ownership.',
+  },
+  alternates: {
+    canonical: 'https://millerenergygroup.com/mineral-rights-types/mineral-rights',
+  },
 }
 
 export default function MineralRightsPage() {
@@ -22,8 +37,7 @@ export default function MineralRightsPage() {
         </header>
 
         <Container className="mt-24 sm:mt-32 lg:mt-40">
-          <FadeIn>
-            <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-4xl">
               {/* Article Header */}
               <div className="mb-12">
                 <div className="flex items-center space-x-4 text-sm text-neutral-600 mb-4">
@@ -194,7 +208,6 @@ export default function MineralRightsPage() {
                 </section>
               </article>
             </div>
-          </FadeIn>
         </Container>
       </article>
 

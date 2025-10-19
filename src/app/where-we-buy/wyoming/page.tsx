@@ -44,10 +44,7 @@ export default function Wyoming() {
           <Container>
             <PageIntro eyebrow="Selling Mineral Rights in Wyoming" title="Rocky Mountain West Mineral Rights">
               <p>
-                Miller Energy Group focuses on mineral rights in the Rocky Mountain West region and helping those who are interested in selling mineral rights in Wyoming. We have worked with people in Campbell, Converse, Crook, Johnson, Laramie, Natrona, Niobrara, Sheridan, and Sublette counties.
-              </p>
-              <p>
-                If you are located in Wyoming, contact us today to learn more about your options to sell, lease, or keep your mineral rights. Our deep knowledge of the Rocky Mountain Region – an area we know best and have a personal connection with, allows us to provide you with insight and knowledge to give you comfort in making the right decision for you and your family.
+                Miller Energy Group focuses on mineral rights in the Rocky Mountain West region and helping those who are interested in selling mineral rights in Wyoming. We have worked with people in Campbell, Converse, Crook, Johnson, Laramie, Natrona, Niobrara, Sheridan, and Sublette counties. If you are located in Wyoming, contact us today to learn more about your options to sell, lease, or keep your mineral rights. Our deep knowledge of the Rocky Mountain Region – an area we know best and have a personal connection with, allows us to provide you with insight and knowledge to give you comfort in making the right decision for you and your family.
               </p>
             </PageIntro>
           </Container>

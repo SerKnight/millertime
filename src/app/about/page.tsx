@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Border } from '@/components/Border'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
@@ -77,31 +76,29 @@ function IndustryAssociations() {
 
   return (
     <Container className="mt-16 sm:mt-24 lg:mt-32">
-      <FadeIn>
-        <div className="text-center">
-          <h2 className="font-display text-3xl font-semibold text-primary mb-6">
-            Industry Associations & Certifications
-          </h2>
-          <p className="text-lg text-neutral-600 mb-12 max-w-2xl mx-auto">
-            Miller Energy Group is proud to be associated with leading industry organizations that uphold the highest standards in mineral rights acquisition and land management.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-          {associations.map((association, index) => (
-            <FadeIn key={index} className="flex justify-center">
-              <div className="flex items-center justify-center h-24 w-48 bg-neutral-50 rounded-lg p-4">
-                <Image
-                  src={association.logo}
-                  alt={association.name}
-                  width={120}
-                  height={60}
-                  className="object-contain max-h-16"
-                />
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </FadeIn>
+      <div className="text-center">
+        <h2 className="font-display text-3xl font-semibold text-primary mb-6">
+          Industry Associations & Certifications
+        </h2>
+        <p className="text-lg text-neutral-600 mb-12 max-w-2xl mx-auto">
+          Miller Energy Group is proud to be associated with leading industry organizations that uphold the highest standards in mineral rights acquisition and land management.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        {associations.map((association, index) => (
+          <div key={index} className="flex justify-center">
+            <div className="flex items-center justify-center h-24 w-48 bg-neutral-50 rounded-lg p-4">
+              <Image
+                src={association.logo}
+                alt={association.name}
+                width={120}
+                height={60}
+                className="object-contain max-h-16"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </Container>
   )
 }
@@ -141,64 +138,46 @@ function Team() {
     <Container className="mt-16 sm:mt-24 lg:mt-32">
       <div className="space-y-24">
         {team.map((group) => (
-          <FadeInStagger key={group.title}>
-            <Border as={FadeIn} />
-            <div className="grid grid-cols-1 gap-6 sm:gap-8 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
-              <FadeIn>
-                <h2 className="font-display text-2xl font-semibold text-primary">
-                  {group.title}
-                </h2>
-              </FadeIn>
-              <div className="lg:col-span-3">
-                <div className="space-y-8">
-                  {group.people.map((person) => (
-                    <FadeIn key={person.name}>
-                      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                        <div className="lg:col-span-1">
-                          <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
-                            <Image
-                              alt=""
-                              {...person.image}
-                              className="h-80 sm:h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black to-black/0 to-40% p-6">
-                              <p className="font-display text-base/6 font-semibold tracking-wide text-white">
-                                {person.name}
-                              </p>
-                              <p className="mt-2 text-sm text-white">
-                                {person.role}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lg:col-span-2 space-y-6">
-                          <div>
-                            <p className="text-base text-neutral-600">{person.bio}</p>
-                          </div>
-                          <div>
-                            <h3 className="font-display text-lg font-semibold text-primary">Experience</h3>
-                            <p className="mt-2 text-base text-neutral-600">{person.experience}</p>
-                          </div>
-                          <div>
-                            <h3 className="font-display text-lg font-semibold text-primary">Background</h3>
-                            <p className="mt-2 text-base text-neutral-600">{person.background}</p>
-                          </div>
-                          <div>
-                            <h3 className="font-display text-lg font-semibold text-primary">Community Involvement</h3>
-                            <p className="mt-2 text-base text-neutral-600">{person.community}</p>
-                          </div>
-                          <div>
-                            <h3 className="font-display text-lg font-semibold text-primary">Personal</h3>
-                            <p className="mt-2 text-base text-neutral-600">{person.personal}</p>
-                          </div>
-                        </div>
+          <div key={group.title}>
+            <Border />
+            <div className="pt-12 sm:pt-16">
+              <h2 className="font-display text-2xl font-semibold text-primary mb-8">
+                {group.title}
+              </h2>
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {group.people.map((person) => (
+                  <div key={person.name}>
+                    <div className="group relative overflow-hidden rounded-3xl bg-neutral-100 hover:shadow-lg transition-shadow duration-200">
+                      <Image
+                        alt={`${person.name}, ${person.role}`}
+                        {...person.image}
+                        className="h-64 w-full object-cover grayscale transition duration-300 motion-safe:group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                        <p className="font-display text-lg font-semibold tracking-wide text-white">
+                          {person.name}
+                        </p>
+                        <p className="mt-1 text-sm text-white/90">
+                          {person.role}
+                        </p>
                       </div>
-                    </FadeIn>
-                  ))}
-                </div>
+                      <div className="p-6">
+                        <p className="text-sm text-neutral-600 line-clamp-3 mb-4">
+                          {person.bio}
+                        </p>
+                        <button 
+                          className="text-sm font-medium text-primary hover:text-primary-dark transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                          aria-label={`Read more about ${person.name}, ${person.role}`}
+                        >
+                          Read More →
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          </FadeInStagger>
+          </div>
         ))}
       </div>
     </Container>
@@ -206,9 +185,24 @@ function Team() {
 }
 
 export const metadata: Metadata = {
-  title: 'About Miller Energy Group',
-  description:
-    'Miller Energy Group is an independent mineral rights broker and investment group based in Denver, Colorado with deep roots in the Rocky Mountain West.',
+  title: 'About Miller Energy Group - 5th Generation Coloradans',
+  description: 'Miller Energy Group is an independent mineral rights broker and investment group based in Denver, Colorado. Led by 5th generation Coloradans with deep roots in the Rocky Mountain West.',
+  keywords: 'about Miller Energy Group, mineral rights broker, Denver Colorado, Rocky Mountain West, 5th generation Coloradan, mineral rights expertise, land management',
+  openGraph: {
+    title: 'About Miller Energy Group - 5th Generation Coloradans',
+    description: 'Miller Energy Group is an independent mineral rights broker and investment group based in Denver, Colorado with deep roots in the Rocky Mountain West.',
+    type: 'website',
+    url: 'https://millerenergygroup.com/about',
+    siteName: 'Miller Energy Group',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About Miller Energy Group',
+    description: 'Miller Energy Group is an independent mineral rights broker and investment group based in Denver, Colorado with deep roots in the Rocky Mountain West.',
+  },
+  alternates: {
+    canonical: 'https://millerenergygroup.com/about',
+  },
 }
 
 export default async function About() {

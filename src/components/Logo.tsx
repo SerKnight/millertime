@@ -28,6 +28,8 @@ export function Logomark({
           invert ? 'brightness-0 invert' : ''
         )}
         priority
+        quality={100}
+        sizes="32px"
       />
     </div>
   )
@@ -63,6 +65,8 @@ export function Logo({
           invert ? 'brightness-0 invert' : ''
         )}
         priority
+        quality={100}
+        sizes="(max-width: 640px) 120px, 200px"
       />
     </div>
   )

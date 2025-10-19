@@ -2,13 +2,28 @@ import { type Metadata } from 'next'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 
 export const metadata: Metadata = {
-  title: 'Land Ownership',
-  description: 'Understanding surface estate ownership and your rights to the land surface.',
+  title: 'Land Ownership - Surface Estate Rights | Miller Energy Group',
+  description: 'Learn about surface estate ownership, your rights to the land surface, and how it differs from mineral rights ownership.',
+  keywords: 'land ownership, surface estate, surface rights, land surface, property ownership, mineral rights separation',
+  openGraph: {
+    title: 'Land Ownership - Surface Estate Rights',
+    description: 'Learn about surface estate ownership, your rights to the land surface, and how it differs from mineral rights ownership.',
+    type: 'article',
+    url: 'https://millerenergygroup.com/mineral-rights-types/land-ownership',
+    siteName: 'Miller Energy Group',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Land Ownership - Surface Estate Rights',
+    description: 'Learn about surface estate ownership, your rights to the land surface, and how it differs from mineral rights ownership.',
+  },
+  alternates: {
+    canonical: 'https://millerenergygroup.com/mineral-rights-types/land-ownership',
+  },
 }
 
 export default function LandOwnershipPage() {
@@ -22,8 +37,7 @@ export default function LandOwnershipPage() {
         </header>
 
         <Container className="mt-24 sm:mt-32 lg:mt-40">
-          <FadeIn>
-            <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-4xl">
               {/* Article Header */}
               <div className="mb-12">
                 <div className="flex items-center space-x-4 text-sm text-neutral-600 mb-4">
@@ -150,7 +164,6 @@ export default function LandOwnershipPage() {
                 </section>
               </article>
             </div>
-          </FadeIn>
         </Container>
       </article>
 

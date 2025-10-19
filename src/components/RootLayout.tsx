@@ -83,7 +83,13 @@ function Header({
         <div className="flex items-center gap-x-2 sm:gap-x-4">
           <a
             href="tel:+17203186907"
-            className="hidden sm:inline-flex items-center justify-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+            className={clsx(
+              "hidden sm:inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
+              invert 
+                ? "border-white/20 text-white hover:bg-white/10 focus:ring-white" 
+                : "border-neutral-300 text-neutral-900 hover:bg-neutral-50 focus:ring-neutral-950"
+            )}
+            aria-label="Call Miller Energy Group at (720) 318-6907"
           >
             (720) 318-6907
           </a>
@@ -97,10 +103,12 @@ function Header({
             aria-expanded={expanded ? 'true' : 'false'}
             aria-controls={panelId}
             className={clsx(
-              'group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-white/10' : 'hover:bg-neutral-950/10',
+              'group -m-2.5 rounded-full p-2.5 transition focus:outline-none focus:ring-2 focus:ring-offset-2',
+              invert 
+                ? 'hover:bg-white/10 focus:ring-white' 
+                : 'hover:bg-neutral-950/10 focus:ring-neutral-950',
             )}
-            aria-label="Toggle navigation"
+            aria-label="Toggle navigation menu"
           >
             <Icon
               className={clsx(
@@ -149,16 +157,12 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/mineral-rights-types">Mineral Rights Types</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/selling-your-mineral-rights">Selling Your Mineral Rights</NavigationItem>
+        <NavigationItem href="/mineral-rights-types">Learn</NavigationItem>
         <NavigationItem href="/where-we-buy">Where We Buy</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/interactive-map">Interactive Map</NavigationItem>
-        <NavigationItem href="/resources">Resources</NavigationItem>
+        <NavigationItem href="/selling-your-mineral-rights">Our Process</NavigationItem>
+        <NavigationItem href="/about">About</NavigationItem>
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/contact">Contact</NavigationItem>
@@ -201,6 +205,12 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
       }
     >
       <header>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded focus:outline-none"
+        >
+          Skip to main content
+        </a>
         <div
           className="absolute top-2 right-0 left-0 z-40 pt-14"
           aria-hidden={expanded ? 'true' : undefined}
@@ -286,7 +296,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             interactive
           />
 
-          <main className="w-full flex-auto">{children}</main>
+          <main id="main-content" className="w-full flex-auto">{children}</main>
 
           <Footer />
         </motion.div>

@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 
@@ -31,36 +30,49 @@ const types = [
 function TypesGrid() {
   return (
     <Container className="mt-12 sm:mt-16">
-      <FadeInStagger className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-3">
         {types.map((type) => (
-          <FadeIn key={type.href} className="flex">
-            <article className="relative flex w-full flex-col rounded-3xl p-6 sm:p-8 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50">
-              <h3>
-                <Link href={type.href}>
-                  <span className="absolute inset-0 rounded-3xl" />
-                  <span className="font-display text-2xl font-semibold text-primary">
-                    {type.title}
-                  </span>
-                </Link>
-              </h3>
-              <p className="mt-4 text-base text-neutral-600">
-                {type.description}
-              </p>
-              <p className="mt-4 text-sm text-neutral-500">
-                {type.details}
-              </p>
-            </article>
-          </FadeIn>
+          <article key={type.href} className="relative flex w-full flex-col rounded-3xl p-6 sm:p-8 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50">
+            <h3>
+              <Link href={type.href}>
+                <span className="absolute inset-0 rounded-3xl" />
+                <span className="font-display text-2xl font-semibold text-primary">
+                  {type.title}
+                </span>
+              </Link>
+            </h3>
+            <p className="mt-4 text-base text-neutral-600">
+              {type.description}
+            </p>
+            <p className="mt-4 text-sm text-neutral-500">
+              {type.details}
+            </p>
+          </article>
         ))}
-      </FadeInStagger>
+      </div>
     </Container>
   )
 }
 
 export const metadata: Metadata = {
-  title: 'Mineral Rights Types',
-  description:
-    'Understanding your mineral rights can be confusing. Learn about land ownership, mineral rights, and royalty interests to make informed decisions.',
+  title: 'Mineral Rights Types - Land Ownership, Mineral Rights & Royalties',
+  description: 'Understanding your mineral rights can be confusing. Learn about land ownership, mineral rights, and royalty interests to make informed decisions about your property.',
+  keywords: 'mineral rights types, land ownership, mineral rights, royalty interests, surface estate, mineral ownership, property rights',
+  openGraph: {
+    title: 'Mineral Rights Types - Land Ownership, Mineral Rights & Royalties',
+    description: 'Understanding your mineral rights can be confusing. Learn about land ownership, mineral rights, and royalty interests to make informed decisions about your property.',
+    type: 'website',
+    url: 'https://millerenergygroup.com/mineral-rights-types',
+    siteName: 'Miller Energy Group',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mineral Rights Types - Land Ownership, Mineral Rights & Royalties',
+    description: 'Understanding your mineral rights can be confusing. Learn about land ownership, mineral rights, and royalty interests to make informed decisions about your property.',
+  },
+  alternates: {
+    canonical: 'https://millerenergygroup.com/mineral-rights-types',
+  },
 }
 
 export default function MineralRightsTypes() {

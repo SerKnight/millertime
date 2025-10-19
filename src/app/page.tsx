@@ -139,6 +139,7 @@ function WhySell() {
             <FadeIn className="w-135 flex-none lg:w-180">
               <StylizedImage
                 src={imageLand}
+                alt="Rocky Mountain landscape with oil and gas infrastructure"
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
@@ -207,8 +208,44 @@ function WhySell() {
 }
 
 export const metadata: Metadata = {
-  description:
-    'Miller Energy Group is a mineral acquisition group that buys mineral rights from small companies and mineral owners in Colorado, Wyoming, New Mexico, North Dakota and Montana.',
+  title: 'Miller Energy Group - Mineral Rights Buyers | Free Valuation',
+  description: 'Miller Energy Group buys mineral rights in Colorado, Wyoming, New Mexico, North Dakota, and Montana. Get a free valuation of your mineral rights today. 5th generation Coloradans with 100,000+ acres handled.',
+  keywords: 'mineral rights buyers, oil and gas rights, mineral rights valuation, Colorado mineral rights, Wyoming mineral rights, New Mexico mineral rights, North Dakota mineral rights, Montana mineral rights, royalty interests, land ownership',
+  openGraph: {
+    title: 'Miller Energy Group - Mineral Rights Buyers | Free Valuation',
+    description: 'Miller Energy Group buys mineral rights in Colorado, Wyoming, New Mexico, North Dakota, and Montana. Get a free valuation of your mineral rights today.',
+    type: 'website',
+    url: 'https://millerenergygroup.com',
+    siteName: 'Miller Energy Group',
+    images: [
+      {
+        url: '/images/logo/TheMillerEngergyGroup_logo.png',
+        width: 200,
+        height: 32,
+        alt: 'Miller Energy Group Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Miller Energy Group - Mineral Rights Buyers',
+    description: 'Miller Energy Group buys mineral rights in Colorado, Wyoming, New Mexico, North Dakota, and Montana. Get a free valuation of your mineral rights today.',
+    images: ['/images/logo/TheMillerEngergyGroup_logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://millerenergygroup.com',
+  },
 }
 
 export default async function Home() {

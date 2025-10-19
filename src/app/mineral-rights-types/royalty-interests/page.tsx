@@ -1,16 +1,29 @@
 import { type Metadata } from 'next'
-import { notFound } from 'next/navigation'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
-import { MDXComponents } from '@/components/MDXComponents'
 
 export const metadata: Metadata = {
-  title: 'Royalty Interests',
-  description: 'Understanding royalty interests and your right to receive a percentage of mineral production profits.',
+  title: 'Royalty Interests - Mineral Rights Explained | Miller Energy Group',
+  description: 'Learn about royalty interests in mineral rights. Understand how royalty payments work, types of royalty interests, and your rights as a mineral owner.',
+  keywords: 'royalty interests, mineral rights, royalty payments, oil and gas royalties, mineral ownership, passive income, NPRI, overriding royalty',
+  openGraph: {
+    title: 'Royalty Interests - Mineral Rights Explained',
+    description: 'Learn about royalty interests in mineral rights. Understand how royalty payments work, types of royalty interests, and your rights as a mineral owner.',
+    type: 'article',
+    url: 'https://millerenergygroup.com/mineral-rights-types/royalty-interests',
+    siteName: 'Miller Energy Group',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royalty Interests - Mineral Rights Explained',
+    description: 'Learn about royalty interests in mineral rights. Understand how royalty payments work, types of royalty interests, and your rights as a mineral owner.',
+  },
+  alternates: {
+    canonical: 'https://millerenergygroup.com/mineral-rights-types/royalty-interests',
+  },
 }
 
 export default function RoyaltyInterestsPage() {
@@ -24,8 +37,7 @@ export default function RoyaltyInterestsPage() {
         </header>
 
         <Container className="mt-24 sm:mt-32 lg:mt-40">
-          <FadeIn>
-            <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-4xl">
               {/* Article Header */}
               <div className="mb-12">
                 <div className="flex items-center space-x-4 text-sm text-neutral-600 mb-4">
@@ -215,7 +227,6 @@ export default function RoyaltyInterestsPage() {
                 </section>
               </article>
             </div>
-          </FadeIn>
         </Container>
       </article>
 

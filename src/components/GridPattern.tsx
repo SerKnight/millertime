@@ -102,7 +102,7 @@ export function GridPattern({
             x={block[0]}
             y={block[1]}
             animate={{ opacity: [0, 1, 0] }}
-            transition={{ duration: 1, times: [0, 0, 1] }}
+            transition={{ duration: 0.3, times: [0, 0, 1] }}
             onAnimationComplete={() => {
               setHoveredBlocks((blocks) =>
                 blocks.filter((b) => b[2] !== block[2]),

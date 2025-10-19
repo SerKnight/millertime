@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -28,28 +27,24 @@ function ProfessionalSection({
     <div className="w-full py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="w-full">
-          <FadeIn>
-            <h2 className="font-display text-3xl font-semibold text-primary mb-4">
-              {title}
-            </h2>
-            {subtitle && (
-              <p className="text-lg text-neutral-600 mb-8">
-                {subtitle}
-              </p>
-            )}
-            <div className="prose prose-lg max-w-none">
-              {children}
-            </div>
-          </FadeIn>
+          <h2 className="font-display text-3xl font-semibold text-primary mb-4">
+            {title}
+          </h2>
+          {subtitle && (
+            <p className="text-lg text-neutral-600 mb-8">
+              {subtitle}
+            </p>
+          )}
+          <div className="prose prose-lg max-w-none">
+            {children}
+          </div>
           {image && (
             <div className="flex justify-center mt-12">
-              <FadeIn>
-                <StylizedImage
-                  {...image}
-                  sizes="(min-width: 1024px) 41rem, 31rem"
-                  className="w-full max-w-lg"
-                />
-              </FadeIn>
+              <StylizedImage
+                {...image}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="w-full max-w-lg"
+              />
             </div>
           )}
         </div>
@@ -202,45 +197,43 @@ function ProfessionalContact() {
     <div className="w-full py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center">
-          <FadeIn>
-            <h2 className="font-display text-3xl font-semibold text-primary mb-4">
-              Professional Mineral Rights Consultation
-            </h2>
-            <p className="text-lg text-neutral-600 mb-8 max-w-3xl mx-auto">
-              Contact our experienced landmen for a confidential consultation regarding your mineral rights. 
-              We provide professional evaluation, title research, and acquisition services throughout the Rocky Mountain region.
-            </p>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 max-w-4xl mx-auto">
-              <div className="bg-primary/5 p-8 rounded-lg border border-primary/20">
-                <h3 className="font-display text-xl font-semibold text-primary mb-4">
-                  Office Location
-                </h3>
-                <p className="text-neutral-700 mb-2">
-                  1325 S. Colorado Blvd., Suite B-600
-                </p>
-                <p className="text-neutral-700 mb-4">
-                  Denver, CO 80222
-                </p>
-                <p className="text-sm text-neutral-600">
-                  Professional mineral rights consultation by appointment
-                </p>
-              </div>
-              <div className="bg-primary/5 p-8 rounded-lg border border-primary/20">
-                <h3 className="font-display text-xl font-semibold text-primary mb-4">
-                  Contact Information
-                </h3>
-                <p className="text-neutral-700 mb-2">
-                  Phone: (720) 318-6907
-                </p>
-                <p className="text-neutral-700 mb-4">
-                  Email: Info@Millerenergygroup.com
-                </p>
-                <p className="text-sm text-neutral-600">
-                  Licensed landmen serving the Rocky Mountain region
-                </p>
-              </div>
+          <h2 className="font-display text-3xl font-semibold text-primary mb-4">
+            Professional Mineral Rights Consultation
+          </h2>
+          <p className="text-lg text-neutral-600 mb-8 max-w-3xl mx-auto">
+            Contact our experienced landmen for a confidential consultation regarding your mineral rights. 
+            We provide professional evaluation, title research, and acquisition services throughout the Rocky Mountain region.
+          </p>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+            <div className="bg-primary/5 p-8 rounded-lg border border-primary/20">
+              <h3 className="font-display text-xl font-semibold text-primary mb-4">
+                Office Location
+              </h3>
+              <p className="text-neutral-700 mb-2">
+                1325 S. Colorado Blvd., Suite B-600
+              </p>
+              <p className="text-neutral-700 mb-4">
+                Denver, CO 80222
+              </p>
+              <p className="text-sm text-neutral-600">
+                Professional mineral rights consultation by appointment
+              </p>
             </div>
-          </FadeIn>
+            <div className="bg-primary/5 p-8 rounded-lg border border-primary/20">
+              <h3 className="font-display text-xl font-semibold text-primary mb-4">
+                Contact Information
+              </h3>
+              <p className="text-neutral-700 mb-2">
+                Phone: (720) 318-6907
+              </p>
+              <p className="text-neutral-700 mb-4">
+                Email: Info@Millerenergygroup.com
+              </p>
+              <p className="text-sm text-neutral-600">
+                Licensed landmen serving the Rocky Mountain region
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

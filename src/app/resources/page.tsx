@@ -2,7 +2,6 @@ import { type Metadata } from 'next'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 
@@ -22,19 +21,17 @@ export default function Resources() {
       </PageIntro>
 
       <Container className="mt-12 sm:mt-16">
-        <FadeIn>
-          <div className="rounded-3xl bg-neutral-50 p-6 sm:p-8 lg:p-12">
-            <h2 className="font-display text-2xl font-semibold text-primary mb-6">
-              Coming Soon
-            </h2>
-            <p className="text-lg text-neutral-600 mb-6">
-              We're working on creating comprehensive educational resources to help you understand mineral rights and make informed decisions.
-            </p>
-            <p className="text-base text-neutral-600">
-              In the meantime, feel free to contact us directly for personalized guidance about your mineral rights. We're here to help you understand what you own and explore your options.
-            </p>
-          </div>
-        </FadeIn>
+        <div className="rounded-3xl bg-neutral-50 p-6 sm:p-8 lg:p-12">
+          <h2 className="font-display text-2xl font-semibold text-primary mb-6">
+            Coming Soon
+          </h2>
+          <p className="text-lg text-neutral-600 mb-6">
+            We're working on creating comprehensive educational resources to help you understand mineral rights and make informed decisions.
+          </p>
+          <p className="text-base text-neutral-600">
+            In the meantime, feel free to contact us directly for personalized guidance about your mineral rights. We're here to help you understand what you own and explore your options.
+          </p>
+        </div>
       </Container>
 
       <ContactSection />
